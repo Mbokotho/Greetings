@@ -1,15 +1,14 @@
 document.addEventListener('DOMContentLoaded', function(){
 
-  var NameElement = document.querySelector('.firstName');
+  var NameElement = document.querySelector('.Name');
   var greetBtnElement = document.querySelector('.greetBtn');
-  var clearBtnElement = document.querySelector('.clearBtn');
   var greetingElement = document.querySelector('.greeting');
 
   function clickTheGreetButton(){
       var Name = NameElement.value;
 
 
-    var greetingString = "Hi, <em>" + Name ;
+    var greetingString = "Hello, <em>" + Name;
 
     //var greetingString = greet(firstName);
     console.log(greetingString);
@@ -22,23 +21,14 @@ document.addEventListener('DOMContentLoaded', function(){
 
   function greet(name){
     if (name.length > 2){
-        return "Hi, " + name;
+        return "Hello " +  name;
     }
   }
 
   greetBtnElement.addEventListener('click', clickTheGreetButton);
 
-  function clickTheClearButton(){
-      greetingElement.innerHTML = '';
-  };
 
-  clearBtnElement.addEventListener('click', clickTheClearButton);
 
-  function makeRed(){
-    greetingElement.classList.toggle('red');
-  }
-
-  greetingElement.addEventListener('dblclick', makeRed);
 
   //console.log(firstNameElement);
   //alert("yo!");
