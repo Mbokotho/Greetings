@@ -4,26 +4,48 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="greet.css">
-    <title>Greetings</title>
+    <title>GreetPage</title>
   </head>
   <body>
-
-
-    <div id="header">
-      <h1>GREETINGS EVERYONE !!</h1>
-    </div>
+    <div class= "row" id="header" >
+      <div class="twelve columns">
 
     <div >
-            Name : <input type="text" class="Name">
+      <h1 style="color:white;">Greetings</h1>
+    </div>
+</div>
+</div>
+
+    <div class="row">
+      <div class="six columns">
+
+        <label for="">Please The Name of Person You Want To Greet</label>
+        <input type="text" name="" value="" placeholder="eg. Lwando" class="Name">
+        <button class="button-primary greetBtn" type="button" name="button" >Greet</button>
+
+    </div>
+</div>
+<label class="">
+  <input type="radio" name="Language" class="LanguageRadio" value="Mandarin">
+  <span class="label-body">Mandarin</span>
+</label>
+<label class="">
+  <input type="radio" name="Language" class="LanguageRadio" value="English">
+  <span class="label-body" >English</span>
+</label>
+<label class="">
+  <input type="radio" name="Language" class="LanguageRadio" value="IsiXhosa">
+  <span class="label-body" >IsiXhosa</span>
+</label>
+<div class="">
+    People Gretted : <h1> <span class="counter greetCounter" >0</span></h1>
+      </div>
+
+      <div class="greeting">
+
     </div>
 
-  </div>
-     <input type="button" name="" value="Greet!" class="greetBtn" >
-  </div>
-  <div class="greeting">
-     Hello!
-   </div>
 
   </body>
-<script src="Greetings/greet.js" charset="utf-8"></script>
+<script src="/home/coder/projects/Greetings/greet.js" charset="utf-8"></script>
 </html>
