@@ -3,6 +3,7 @@
   var greetBtnElement = document.querySelector('.greetBtn');
   var greetingElement = document.querySelector('.greeting');
   var greetingCounterElement = document.querySelector('.greetCounter');
+  var resetBtnElement = document.querySelector('.reBtn');
 
   var greeting = "";
   var Names = {};
@@ -27,6 +28,8 @@
 
     }
        var Name = NameElement.value;
+
+
        if(Name != ''){
 
 
@@ -37,15 +40,16 @@
 
   }
         if (language === 'English') {
-          greeting = "Hello, " + Name;
+          greeting = "Hello, " +NameElement.value;
         }
         if(language === 'Mandarin'){
-          greeting = "Nǐ hǎo " + Name;
+          greeting = "Nǐ hǎo, " +NameElement.value;
         }
         if (language === 'IsiXhosa') {
-          greeting = "Mholo " + Name }
-          console.log(Names);
+          greeting = "Mholo, " + NameElement.value }
 
+
+          console.log(Names);
 
 
 
@@ -63,13 +67,16 @@
 
         }
 
-  // function greet(name){
-  //   if (name.length > 2){
-  //       return "Hello " +  name;
-  //   }
-  // }
+        greetBtnElement.addEventListener('click', clickTheGreetButton);
 
-  greetBtnElement.addEventListener('click', clickTheGreetButton);
+
+        function clickTheClearButton(){
+              greetingElement.innerHTML = '';
+          };
+
+
+  resetBtnElement.addEventListener('click', clickTheClearButton);
+
 
 
 

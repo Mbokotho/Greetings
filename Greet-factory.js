@@ -17,10 +17,11 @@ var myGreet = function(language,Name){
      greeting = "Hello, " + Name;
    }
    if(language === 'Mandarin'){
-     greeting = "Nǐ hǎo " + Name;
+     greeting = "Nǐ hǎo, " + Name;
    }
    if (language === 'IsiXhosa') {
-     greeting = "Mholo " + Name }
+     greeting = "Mholo, " + Name
+    }
 
 }
 

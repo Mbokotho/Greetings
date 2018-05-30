@@ -28,13 +28,19 @@
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-
+/*
+.greeting{
+  border: 1px solid :black;
+  width: 100%;
+  background-color:black;
+  padding-left: 1em;
+  border-radius: 10px;
+} */
 
 #header{
-  border: 1px solid :#33C3F0;
+  border: 1px solid :black;
   width: 100%;
-  background-color:#33C3F0;
+  background-color:black;
   padding-left: 1em;
   border-radius: 10px;
 }
@@ -217,8 +223,8 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
-  background-color: #33C3F0;
-  border-color: #33C3F0; }
+  background-color: black;
+  border-color: black; }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,

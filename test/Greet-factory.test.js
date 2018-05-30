@@ -14,7 +14,7 @@ it('Greet name in Mandarin', function(){
   var getGreet = Greeting();
   getGreet.myGreet("Mandarin", "Lwando");
 
-  assert.equal( getGreet.mygreeting(), "Nǐ hǎo Lwando");
+  assert.equal( getGreet.mygreeting(), "Nǐ hǎo, Lwando");
 
 
 });
