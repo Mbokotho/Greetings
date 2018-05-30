@@ -17,14 +17,14 @@
 
     }
        var Name = NameElement.value;
-
+       var name = Name.toUpperCase();
 
        if(Name != ''){
 
 
-      if(Names[Name] === undefined){
+      if(Names[name] === undefined){
 
-      Names[Name] = 0;
+      Names[name] = 0;
         }
 
   }
@@ -48,8 +48,6 @@
           greetingElement.innerHTML = greeting;
           NameElement.value = '';
           // greetingCounterElement.innerHTML = Object.keys(Names).length - 1;
-
-
 
 
 

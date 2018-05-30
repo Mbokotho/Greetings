@@ -28,13 +28,17 @@ var myGreet = function(language,Name){
  function mygreeting(){
 
   return greeting;
+}
+
+function myCounter() {
+  return Object.entries(Names).length ;
 
 }
 
-
     return{
            mygreeting,
-           myGreet
+           myGreet,myCounter
+
        }
 
 }

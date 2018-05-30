@@ -28,4 +28,15 @@ it('Greet name in isiXhosa', function(){
 
 });
 
+it('should count how many people i have greeted', function(){
+
+  var getGreet = Greeting();
+  getGreet.myGreet("English", "Bontle");
+  getGreet.myGreet("IsiXhosa", "Sihle");
+  getGreet.myGreet("Mandarin", "Buhle");
+  getGreet.myGreet("IsiXhosa", "Kuhle");
+
+  assert.equal( getGreet.myCounter(), 4);
+});
+
 });
