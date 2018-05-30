@@ -10,17 +10,6 @@
 
 
   function clickTheGreetButton(){
-    //
-    // / console.log(JSON.stringify(names));
-    // var MyNames = [];
-    // //take the names from localStorage
-    // if (localStorage['MyNames']) {
-    //   MyNames = JSON.parse(localStorage['MyNames']);
-    // }
-    //
-    //
-    //   localStorage['MyNames'] = JSON.stringify(MyNames);
-    // });
 
           var checkedRadioBtn = document.querySelector("input[name='Language']:checked");
     if (checkedRadioBtn){
@@ -68,18 +57,3 @@
         }
 
         greetBtnElement.addEventListener('click', clickTheGreetButton);
-
-
-        function clickTheClearButton(){
-              greetingElement.innerHTML = '';
-          };
-
-
-  resetBtnElement.addEventListener('click', clickTheClearButton);
-
-
-
-
-
-  //console.log(firstNameElement);
-  //alert("yo!");

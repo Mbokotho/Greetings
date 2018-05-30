@@ -18,5 +18,14 @@ it('Greet name in Mandarin', function(){
 
 
 });
+it('Greet name in isiXhosa', function(){
+
+  var getGreet = Greeting();
+  getGreet.myGreet("IsiXhosa", "Lwando");
+
+  assert.equal( getGreet.mygreeting(), "Mholo, Lwando");
+
+
+});
 
 });
