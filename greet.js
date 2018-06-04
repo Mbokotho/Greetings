@@ -37,12 +37,11 @@ function clickTheGreetButton() {
     }
 
   }
-  getGreet.myGreet(language, Name);
 
 
   greetingCounterElement.innerHTML = Object.entries(Names).length;
 
-  greetingElement.innerHTML = getGreet.mygreeting();
+  greetingElement.innerHTML =  getGreet.myGreet(language, Name);
   NameElement.value = '';
 
 }

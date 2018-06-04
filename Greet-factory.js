@@ -6,7 +6,7 @@
 var myGreet = function(language,Name){
   var name = Name.toUpperCase();
 
-    if (Name != "") {
+    if (name != "") {
 
       if (Names[name] === undefined) {
 
@@ -27,7 +27,7 @@ var myGreet = function(language,Name){
   } if ( language === 'English') {
       greeting = "Hello, " + Name;
   }
-
+return  greeting;
 }
 
  function mygreeting(){
