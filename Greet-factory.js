@@ -4,12 +4,17 @@
 
 var myGreet = function(language,Name){
 
+  var name = Name.toUpperCase();
+
+
+
+
   if(Name != ''){
 
 
- if(Names[Name] === undefined){
+ if(Names[name] === undefined){
 
- Names[Name] = 0;
+ Names[name] = 0;
    }
 
 }
