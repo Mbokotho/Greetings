@@ -1,30 +1,32 @@
  function Greeting(){
   var Names = {};
   var greeting = "";
+  var Name ="";
 
 var myGreet = function(language,Name){
-  // var Name = NameElement.value;
   var name = Name.toUpperCase();
 
-  if(Name != ''){
+    if (Name != "") {
 
+      if (Names[name] === undefined) {
 
- if(Names[name] === undefined){
+        Names[name] = 0;
 
+      }
 
- Names[name] = 0;
-   }
-
-}
-   if (language === 'English') {
-     greeting = "Hello, " + Name;
-   }
-   if(language === 'Mandarin'){
-     greeting = "Nǐ hǎo, " + Name;
-   }
-   if (language === 'IsiXhosa') {
-     greeting = "Mholo, " + Name
     }
+
+
+  if ( language === 'IsiXhosa') {
+    greeting = "Mholo, " +  Name;
+  }
+  if (language === 'Mandarin') {
+
+     greeting = "Nǐ hǎo, " + Name;
+
+  } if ( language === 'English') {
+      greeting = "Hello, " + Name;
+  }
 
 }
 
