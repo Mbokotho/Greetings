@@ -3,16 +3,14 @@
   var greeting = "";
 
 var myGreet = function(language,Name){
-
+  // var Name = NameElement.value;
   var name = Name.toUpperCase();
-
-
-
 
   if(Name != ''){
 
 
  if(Names[name] === undefined){
+
 
  Names[name] = 0;
    }

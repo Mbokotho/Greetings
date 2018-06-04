@@ -9,6 +9,7 @@ var Names = {};
 
 if (localStorage.getItem("myNames")) {
   Names = JSON.parse(localStorage.getItem("myNames"))
+    greetingCounterElement.innerHTML = Object.entries(Names).length;
 }
 
 
@@ -34,10 +35,6 @@ function clickTheGreetButton() {
 
   }
 
-
-if (true) {
-
-}
 
 if ( language === 'IsiXhosa') {
   greeting = "Mholo, " + NameElement.value;
