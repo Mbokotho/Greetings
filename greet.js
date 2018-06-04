@@ -4,13 +4,13 @@ var greetingElement = document.querySelector('.greeting');
 var greetingCounterElement = document.querySelector('.greetCounter');
 var resetBtnElement = document.querySelector('.resetBtn');
 
-// var greeting = "";
+
 var Names = {};
 var Name = "";
 
 if (localStorage.getItem("myNames")) {
   Names = JSON.parse(localStorage.getItem("myNames"))
-    greetingCounterElement.innerHTML = Object.entries(Names).length;
+  greetingCounterElement.innerHTML = Object.entries(Names).length;
 }
 
 var getGreet = Greeting();
@@ -23,13 +23,13 @@ function clickTheGreetButton() {
   if (checkedRadioBtn) {
     var language = checkedRadioBtn.value;
   }
-var Name = NameElement.value;
+  var Name = NameElement.value;
   var name = Name.toUpperCase()
 
- if (Name != "") {
+  if (name != "") {
 
 
-  if (Names[name] === undefined) {
+    if (Names[name] === undefined) {
 
       Names[name] = 0;
       localStorage.setItem("myNames", JSON.stringify(Names));
@@ -37,22 +37,12 @@ var Name = NameElement.value;
     }
 
   }
-getGreet.myGreet(language,Name);
-//
-// if ( language === 'IsiXhosa') {
-//   greeting = "Mholo, " + NameElement.value;
-// }
-// if (language === 'Mandarin') {
-//
-//    greeting = "Nǐ hǎo, " + NameElement.value;
-//
-// } if ( language === 'English') {
-//     greeting = "Hello, " + NameElement.value;
-// }
+  getGreet.myGreet(language, Name);
+
 
   greetingCounterElement.innerHTML = Object.entries(Names).length;
 
-  greetingElement.innerHTML = getGreet. mygreeting();
+  greetingElement.innerHTML = getGreet.mygreeting();
   NameElement.value = '';
 
 }
