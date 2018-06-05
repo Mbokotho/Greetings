@@ -40,9 +40,19 @@ function myCounter() {
 
 }
 
+function resetFunction() {
+
+  var Names = {};
+  var greeting = "";
+  var Name ="";
+  return Names
+}
+
     return{
            mygreeting,
-           myGreet,myCounter
+           myGreet,
+           myCounter,
+           resetFunction
 
        }
 
